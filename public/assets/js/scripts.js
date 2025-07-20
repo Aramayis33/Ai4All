@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', function() {
             })
             .catch(error => {
                 console.error('Error:', error);
-                showToast('Հարցումը ձախողվեց: Խնդրում ենք փորձել կրկին:','error');
+                showToast('Հարցումը ձախողվեց: Խնդրում ենք փորձել կրկի:','error');
             });
     });
 
