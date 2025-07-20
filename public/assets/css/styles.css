@@ -1,0 +1,425 @@
+/* Ընդհանուր ոճեր */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+}
+
+header .neon-button {
+    background: linear-gradient(90deg, rgba(40, 167, 69, 0.9), rgba(0, 255, 204, 0.7));
+    box-shadow: 0 0 15px rgba(40, 167, 69, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+header .neon-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(40, 167, 69, 0.8);
+}
+
+/* User Dropdown */
+header .group:hover .neon-border {
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.5);
+}
+
+header .group .neon-border {
+    transition: box-shadow 0.3s ease;
+}
+
+
+/* Նեոնային էֆեկտեր */
+.neon-text {
+    text-shadow: 0 0 10px rgba(0, 255, 204, 0.8), 0 0 20px rgba(0, 255, 204, 0.4);
+}
+
+/* Նեոնային կոճակ և dropdown */
+.neon-button {
+    background: linear-gradient(90deg, rgba(40, 167, 69, 0.9), rgba(0, 255, 204, 0.7));
+    box-shadow: 0 0 15px rgba(40, 167, 69, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.neon-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(40, 167, 69, 0.8);
+}
+
+.neon-border {
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.5);
+    transition: box-shadow 0.3s ease;
+}
+
+/* Dropdown-ի z-index */
+.neon-border {
+    z-index: 50;
+}
+.neon-shadow {
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.neon-shadow:hover {
+    transform: rotate(360deg);
+}
+
+/* Հերո բաժին */
+#hero {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #0a3d62, #ff00cc);
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+#hero .relative {
+    z-index: 10;
+}
+
+/* About AI Section */
+#about-ai {
+    position: relative;
+    overflow: hidden;
+}
+
+#about-ai::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0, 255, 204, 0.2) 0%, rgba(0, 0, 0, 0) 70%);
+    z-index: 0;
+    opacity: 0.5;
+}
+
+#about-ai .container {
+    position: relative;
+    z-index: 1;
+}
+
+#about-ai .neon-text {
+    text-shadow: 0 0 10px rgba(0, 255, 204, 0.8), 0 0 20px rgba(0, 255, 204, 0.4);
+}
+
+#about-ai .neon-border {
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.5);
+}
+
+/* Projects Section */
+#projects {
+    position: relative;
+    overflow: hidden;
+}
+
+#projects::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0, 255, 204, 0.2) 0%, rgba(0, 0, 0, 0) 70%);
+    z-index: 0;
+    opacity: 0.5;
+}
+
+#projects .container {
+    position: relative;
+    z-index: 1;
+}
+
+#projects .group {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.3);
+}
+
+#projects img {
+    transition: transform 0.3s ease;
+}
+
+#projects .group:hover img {
+    transform: scale(1.1);
+}
+
+#projects .group div {
+    transform: translateY(100%);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#projects .group:hover div {
+    transform: translateY(0);
+    opacity: 1 !important;
+}
+
+#projects .neon-button {
+    box-shadow: 0 0 15px rgba(40, 167, 69, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#projects .neon-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(40, 167, 69, 0.8);
+}
+
+/* Goals Section */
+#goals {
+    position: relative;
+    overflow: hidden;
+}
+
+#goals::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0, 255, 204, 0.2) 0%, rgba(0, 0, 0, 0) 70%);
+    z-index: 0;
+    opacity: 0.5;
+}
+
+#goals .container {
+    position: relative;
+    z-index: 1;
+}
+
+#goals .neon-border {
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#goals .group:hover .neon-border {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 255, 204, 0.8);
+}
+
+#goals svg {
+    transition: transform 0.3s ease;
+}
+
+#goals .group:hover svg {
+    transform: rotate(360deg);
+}
+
+
+
+/* Partners Section */
+#partners {
+    position: relative;
+    overflow: hidden;
+}
+
+#partners::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0, 255, 204, 0.2) 0%, rgba(0, 0, 0, 0) 70%);
+    z-index: 0;
+    opacity: 0.5;
+}
+
+#partners .container {
+    position: relative;
+    z-index: 1;
+}
+
+#partners .neon-text {
+    text-shadow: 0 0 10px rgba(0, 255, 204, 0.8), 0 0 20px rgba(0, 255, 204, 0.4);
+}
+
+#partners .carousel {
+    display: flex;
+    animation: scroll 20s linear infinite;
+}
+
+#partners .carousel-item {
+    flex: 0 0 auto;
+    margin-right: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+#partners .carousel-item img {
+    transition: transform 0.3s ease;
+}
+
+#partners .carousel-item:hover img {
+    transform: scale(1.1);
+}
+
+#partners .neon-border {
+    box-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #partners .carousel-item {
+        margin-right: 1rem;
+    }
+    #partners .carousel-item img {
+        height: 12rem;
+    }
+}
+
+
+
+
+/* Responsive կարգավորումներ */
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+
+    #hero .text-xl {
+        font-size: 1.25rem;
+    }
+
+    #projects .grid {
+        grid-template-columns: 1fr;
+    }
+
+    #navMenu, #mobileNav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+
+
+/* Toast Notification */
+#toast {
+    z-index: 1000;
+}
+
+#toast.show {
+    display: block !important;
+}
+
+#toastMessage {
+    min-width: 200px;
+    max-width: 400px;
+    animation: slideIn 0.5s ease forwards, fadeOut 0.5s ease 3s forwards;
+}
+
+#toastMessage.success {
+    background: linear-gradient(90deg, rgba(40, 167, 69, 0.9), rgba(0, 255, 204, 0.7));
+    box-shadow: 0 0 15px rgba(40, 167, 69, 0.5);
+}
+
+#toastMessage.error {
+    background: linear-gradient(90deg, rgba(220, 38, 38, 0.9), rgba(255, 99, 71, 0.7));
+    box-shadow: 0 0 15px rgba(220, 38, 38, 0.5);
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+
+/* Projects Page */
+#projects-page {
+    position: relative;
+    overflow: hidden;
+}
+
+#projects-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0, 255, 204, 0.2) 0%, rgba(0, 0, 0, 0) 70%);
+    z-index: 0;
+    opacity: 0.5;
+}
+
+#projects-page .container {
+    position: relative;
+    z-index: 1;
+}
+
+#projects-page .neon-text {
+    text-shadow: 0 0 10px rgba(0, 255, 204, 0.8), 0 0 20px rgba(0, 255, 204, 0.4);
+}
+
+#projects-page .neon-border {
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#projects-page .group:hover .neon-border {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 255, 204, 0.8);
+}
+
+#projects-page .animate-pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #projects-page .grid {
+        grid-template-columns: 1fr;
+    }
+}
