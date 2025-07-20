@@ -366,3 +366,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 });
+document.addEventListener('DOMContentLoaded', function() {
+    // Toggle FAQ
+    window.toggleFAQ = function(index) {
+        const answer = document.getElementById(`faq-answer-${index}`);
+        const arrow = document.getElementById(`faq-arrow-${index}`);
+        answer.classList.toggle('hidden');
+        arrow.classList.toggle('rotate-180');
+    };
+});

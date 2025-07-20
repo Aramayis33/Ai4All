@@ -17,3 +17,5 @@ $routes->post('discussion','DiscussionController::getDiscussionDetails');
 $routes->post('send-message','DiscussionController::sendMessage');
 $routes->post('leave-project','ProjectController::leaveProject');
 $routes->get('ai-assistant','Home::assistant');
+$routes->get('faq-contact','Home::contact');
+

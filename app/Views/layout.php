@@ -26,10 +26,14 @@
             </button>
             <div id="navMenu" class="hidden md:flex md:items-center space-x-4">
                 <a class="text-white hover:text-gray-200 hover:border-b-2 border-gray-200 transition duration-300 <?php echo uri_string() == '' ? 'border-b-2' : ''; ?>" href="<?php echo base_url(); ?>">Հիմնական</a>
+
                 <a class="text-white hover:text-gray-200 hover:border-b-2 border-gray-200 transition duration-300 <?php echo uri_string() == 'projects' ? 'border-b-2' : ''; ?>" href="<?php echo base_url('projects'); ?>">Նախագծեր</a>
-                <a class="text-white hover:text-gray-200 hover:border-b-2 border-gray-200 transition duration-300" href="<?php echo base_url('discussion'); ?>">Քննարկում</a>
-                <a class="text-white hover:text-gray-200 hover:border-b-2 border-gray-200 transition duration-300" href="<?php echo base_url('ai-assistant'); ?>">AI Օգնական</a>
-                <a class="text-white hover:text-gray-200 hover:border-b-2 border-gray-200 transition duration-300" href="<?php echo base_url('faq-contact'); ?>">ՀՏՀ և Կապ</a>
+
+                <a class="text-white hover:text-gray-200 hover:border-b-2 border-gray-200 transition duration-300 <?php echo uri_string() == 'discussion' ? 'border-b-2' : ''; ?>" href="<?php echo base_url('discussion'); ?>">Քննարկում</a>
+
+                <a class="text-white hover:text-gray-200 hover:border-b-2 border-gray-200 transition duration-300 <?php echo uri_string() == 'ai-assistant' ? 'border-b-2' : ''; ?>" href="<?php echo base_url('ai-assistant'); ?>">AI Օգնական</a>
+
+                <a class="text-white hover:text-gray-200 hover:border-b-2 border-gray-200 transition duration-300 <?php echo uri_string() == 'faq-contact' ? 'border-b-2' : ''; ?>" href="<?php echo base_url('faq-contact'); ?>">ՀՏՀ և Կապ</a>
                 <?php if (session()->has('user')): ?>
                     <div class="relative">
                         <button onclick="toggleDropdown()" class="neon-button px-4 py-2 rounded-full text-white font-semibold" id="userDropdownButton">

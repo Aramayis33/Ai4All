@@ -16,7 +16,7 @@ class UserProjectModel extends Model
     }
 
     public function getUserProjects(){
-        $user_id=session()->get('user')->id;
+        $user_id=session()->get('user')->id??0;
         if(!$user_id){
             return false;
         }

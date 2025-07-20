@@ -65,4 +65,7 @@ class Home extends BaseController
         return view('assistant');
     }
 
+    public function contact(){
+        return view('contact');
+    }
 }
