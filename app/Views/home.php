@@ -2,16 +2,16 @@
 
 <?= $this->section('content') ?>
 <?php
-echo(env("database.default.hostname")??'hostname chka');
-echo(env("database.default.database")??'database chka');
-echo(env("database.default.username")??'username chka');
-echo(env("database.default.password")??'password chka');
-echo(env("database.default.DBDriver")??'driver chka');
-echo(env("database.default.DBPrefix")??'prefix chka');
-echo(env("database.default.port")??'port chka');
-die();
-
-?>
+//echo(env("database.default.hostname")??'hostname chka');
+//echo(env("database.default.database")??'database chka');
+//echo(env("database.default.username")??'username chka');
+//echo(env("database.default.password")??'password chka');
+//echo(env("database.default.DBDriver")??'driver chka');
+//echo(env("database.default.DBPrefix")??'prefix chka');
+//echo(env("database.default.port")??'port chka');
+//die();
+//
+//?>
     <!-- Hero Section with Particles.js -->
     <section id="hero" class="relative h-screen flex items-center justify-center text-center bg-gradient-to-br from-blue-900 to-purple-600 overflow-hidden">
         <div id="particles-js" class="absolute inset-0 z-0"></div>
