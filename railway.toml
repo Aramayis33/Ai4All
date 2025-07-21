@@ -1,6 +1,9 @@
 [build]
 builder = "NIXPACKS"
-nixpacksPlan = { providers = ["php", "nginx"], versions = ["8.1"] }
+nixpacksPlan = {
+    providers = ["php", "nginx"],
+    versions = ["php@8.1"]
+}
 
 [deploy]
 runtime = "V2"
