@@ -3,7 +3,6 @@
 namespace App\Controllers;
 
 use App\Models\DiscussionModel;
-use App\Models\ProjectModel;
 use App\Models\UserProjectModel;
 use CodeIgniter\Controller;
 
@@ -12,9 +11,7 @@ class DiscussionController extends BaseController
     public function discussion()
     {
         $userProjectModel = new UserProjectModel();
-//        $userProjects = $userProjectModel->getUserProjects();
-        $projectModel = new ProjectModel();
-        $userProjects=$projectModel->
+        $userProjects = $userProjectModel->getUserProjects();
         $data['userProjects'] = $userProjects;
         return view('discussion', $data);
     }
