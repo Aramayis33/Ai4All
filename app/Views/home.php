@@ -12,6 +12,11 @@
 //die();
 //
 //?>
+<?php
+$host = 'sql7.freesqldatabase.com';
+$ip = gethostbyname($host);
+echo $ip === $host ? 'DNS resolution failed' : "Resolved IP: $ip";
+?>
     <!-- Hero Section with Particles.js -->
     <section id="hero" class="relative h-screen flex items-center justify-center text-center bg-gradient-to-br from-blue-900 to-purple-600 overflow-hidden">
         <div id="particles-js" class="absolute inset-0 z-0"></div>

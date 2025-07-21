@@ -26,7 +26,7 @@ class Database extends Config
      */
     public array $default = [
         'DSN'          => '',
-        'hostname'     => 'sql7.freesqldatabase.com',
+        'hostname'     => 'localhost',
         'username'     => '',
         'password'     => '',
         'database'     => '',
