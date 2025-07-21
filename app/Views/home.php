@@ -13,10 +13,10 @@
 //
 //?>
 <?php
-$host = 'sql7.freesqldatabase.com';
-$ip = gethostbyname($host);
-echo $ip === $host ? 'DNS resolution failed' : "Resolved IP: $ip";
-?>
+//$host = 'sql7.freesqldatabase.com';
+//$ip = gethostbyname($host);
+//echo $ip === $host ? 'DNS resolution failed' : "Resolved IP: $ip";
+//?>
     <!-- Hero Section with Particles.js -->
     <section id="hero" class="relative h-screen flex items-center justify-center text-center bg-gradient-to-br from-blue-900 to-purple-600 overflow-hidden">
         <div id="particles-js" class="absolute inset-0 z-0"></div>
@@ -43,7 +43,7 @@ echo $ip === $host ? 'DNS resolution failed' : "Resolved IP: $ip";
                     <p class="text-lg text-gray-200">Մեր առաքելությունն է հզորացնել Ձեր գաղափարները AI-ի միջոցով՝ ստեղծելով ապագա, որտեղ տեխնոլոգիան ծառայում է մարդկությանը։</p>
                 </div>
                 <div data-aos="fade-left">
-                    <img src=<?=base_url("assets/images/aiWithHuman")?> alt="AI Illustration" class="w-full h-auto rounded-lg neon-border">
+                    <img src=<?=base_url("assets/images/aiWithHuman.png")?> alt="AI Illustration" class="w-full h-auto rounded-lg neon-border">
                 </div>
             </div>
         </div>
