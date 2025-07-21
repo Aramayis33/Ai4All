@@ -1,6 +1,6 @@
 [build]
 builder = "NIXPACKS"
-nixpacksPlan = { providers = ["php"], versions = ["8.1"] }
+nixpacksPlan = { providers = ["php", "nginx"], versions = ["8.1"] }
 
 [deploy]
 runtime = "V2"
@@ -9,4 +9,4 @@ sleepApplication = false
 multiRegionConfig = { europe-west4-drams3a = { numReplicas = 1 } }
 restartPolicyType = "ON_FAILURE"
 restartPolicyMaxRetries = 10
-startCommand = "php -S 0.0.0.0:$PORT -t public"
+startCommand = "nginx -c /nginx.conf & php-fpm -y /assets/php-fpm.conf"
